@@ -127,9 +127,11 @@ Several design decisions were made to improve usability and performance:
 
 This approach improves runtime performance and keeps the application responsive.
 
----
-
 # How to Run the Project
+
+## Prerequisites
+
+Before running the application, ensure that **Python 3.11** is installed on your system.
 
 ## Step 1: Download the Project
 
@@ -146,7 +148,7 @@ cd Book-Recommendation-Web-App
 ## Step 3: Create a Virtual Environment
 
 ```bash
-python -m venv venv
+py -3.11 -m venv venv
 ```
 
 ## Step 4: Activate the Environment
@@ -154,19 +156,19 @@ python -m venv venv
 Windows:
 
 ```bash
-venv\Scripts\activate
+.\venv\Scripts\Activate.ps1
 ```
 
 ## Step 5: Install Required Libraries
 
 ```bash
-pip install -r requirements.txt
+.\venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
 ## Step 6: Run the Application
 
 ```bash
-python app.py
+.\venv\Scripts\python.exe app.py
 ```
 
 ## Step 7: Open the Application
@@ -183,7 +185,6 @@ To stop the application:
 CTRL + C
 ```
 
----
 
 # Learning Process and Use of AI
 
