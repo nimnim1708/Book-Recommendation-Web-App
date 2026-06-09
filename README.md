@@ -85,47 +85,6 @@ Book-Recommendation-Web-App/
 └── .gitignore
 ```
 
----
-
-# Recommendation Approach
-
-## Popularity-Based Recommendation
-
-The homepage displays the Top 50 books based on:
-
-* Number of ratings
-* Average rating
-
-To ensure reliable rankings, only books with at least 250 ratings are considered.
-
-This approach provides users with highly rated and widely recognized books.
-
-## Collaborative Filtering
-
-For personalized recommendations, an item-based collaborative filtering approach is implemented.
-
-The process consists of:
-
-1. Creating a user-book rating matrix (pivot table)
-2. Filling missing values with zeros
-3. Computing cosine similarity between books
-4. Identifying books that are most similar to the selected title
-
-When a user enters a book title, the application recommends books with similar rating patterns among readers.
-
----
-
-# Design Choices
-
-Several design decisions were made to improve usability and performance:
-
-* Flask was used to build the web application.
-* Bootstrap was used to create a responsive user interface.
-* An autocomplete search feature helps users find valid book titles.
-* Computationally expensive calculations are performed beforehand in a Jupyter Notebook.
-* The resulting objects are stored as Pickle files and loaded directly into the Flask application.
-
-This approach improves runtime performance and keeps the application responsive.
 
 # How to Run the Project
 
@@ -185,7 +144,47 @@ To stop the application:
 ```text
 CTRL + C
 ```
+---
 
+# Recommendation Approach
+
+## Popularity-Based Recommendation
+
+The homepage displays the Top 50 books based on:
+
+* Number of ratings
+* Average rating
+
+To ensure reliable rankings, only books with at least 250 ratings are considered.
+
+This approach provides users with highly rated and widely recognized books.
+
+## Collaborative Filtering
+
+For personalized recommendations, an item-based collaborative filtering approach is implemented.
+
+The process consists of:
+
+1. Creating a user-book rating matrix (pivot table)
+2. Filling missing values with zeros
+3. Computing cosine similarity between books
+4. Identifying books that are most similar to the selected title
+
+When a user enters a book title, the application recommends books with similar rating patterns among readers.
+
+---
+
+# Design Choices
+
+Several design decisions were made to improve usability and performance:
+
+* Flask was used to build the web application.
+* Bootstrap was used to create a responsive user interface.
+* An autocomplete search feature helps users find valid book titles.
+* Computationally expensive calculations are performed beforehand in a Jupyter Notebook.
+* The resulting objects are stored as Pickle files and loaded directly into the Flask application.
+
+This approach improves runtime performance and keeps the application responsive.
 
 # Learning Process and Use of AI
 
