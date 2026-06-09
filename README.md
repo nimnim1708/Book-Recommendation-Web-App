@@ -164,6 +164,7 @@ Windows:
 ```bash
 .\venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
+Note: The installation may take several minutes because large libraries such as NumPy, Pandas, SciPy, and Scikit-learn need to be downloaded and installed. Please wait until the installation is completed before proceeding to the next step.
 
 ## Step 6: Run the Application
 
