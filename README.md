@@ -155,13 +155,15 @@ The homepage displays the Top 50 books based on:
 * Number of ratings
 * Average rating
 
-To ensure reliable rankings, only books with at least 250 ratings are considered.
+To ensure reliable rankings, only books with at least 100 ratings are considered.
 
 This approach provides users with highly rated and widely recognized books.
 
 ## Collaborative Filtering
 
 For personalized recommendations, an item-based collaborative filtering approach is implemented.
+
+Before building the recommendation model, implicit ratings (value 0) were removed. Only explicit ratings (1–10) were used for popularity calculations and collaborative filtering.
 
 The process consists of:
 
