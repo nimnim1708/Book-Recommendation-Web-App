@@ -25,6 +25,7 @@ The application allows users to:
 
 * Python 3.11
 * Flask
+* Jupyter notebook
 * Pandas
 * NumPy
 * Scikit-learn
